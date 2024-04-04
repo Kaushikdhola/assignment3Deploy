@@ -1,0 +1,116 @@
+/* @author - snehitroda */
+
+.custom-toolbar {
+    background-color:  #1a237e;
+    /* Dark grey background  #333;*/
+    color: white;
+    /* White text color */
+    width: 100%;
+    /* Ensure toolbar takes full width */
+    display: flex;
+    /* Enable flexbox layout */
+    flex-direction: column;
+    /* Stack toolbar rows vertically on small screens */
+    height: 10px;
+}
+
+.mat-toolbar-row {
+    display: flex;
+    /* Enable flexbox layout for toolbar rows */
+    justify-content: space-between;
+    /* Distribute elements evenly */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.logo {
+    margin-left: 5px;
+    /* Add left margin to the logo */
+}
+
+.search-bar {
+    display: flex;
+    /* Use flexbox layout for search bar */
+    align-items: center;
+    /* Center items vertically */
+    margin: 10px 20px;
+    /* Add margin around search bar */
+    flex: 1;
+    /* Make the search bar take up remaining space on larger screens */
+}
+
+    
+.custom-search-input {
+    width: 100%;
+    /* Expand search bar on larger screens */
+    height: 30px;
+    /* Increase the height of the search bar */
+    padding: 0 10px;
+    /* Add padding to adjust the width */
+}
+
+.login-buttons {
+    margin-right: 20px;
+    /* Add right margin to the login buttons */
+}
+
+.menu-button {
+    margin-right: 20px;
+    /* Add right margin to the menu button */
+}
+
+.mat-icon {
+    width: 24px; /* Adjust the width of the search icon */
+    height: 24px; /* Adjust the height of the search icon */
+    margin-right: 8px; /* Add some margin between the input field and the icon */
+  }
+
+  
+.category-links {
+    margin: 10px 20px;
+    /* Add margin around category links */
+}
+
+.category-links a {
+    color: white;
+    /* Set hyperlink text color to white */
+    margin-right: 10px;
+    /* Add space between hyperlinks */
+}
+
+.login-link {
+    color: white; /* Set hyperlink text color to white */
+    text-decoration: none; /* Remove underline from the hyperlinks */
+    margin-right: 8px; /* Add space between hyperlinks */
+    flex-shrink: 0; /* Ensure login links don't shrink */
+    font-size: 1rem; /* Set font size to match the category toolbar */
+}
+
+.login-link:hover {
+    text-decoration: underline; /* Underline the hyperlink on hover */
+}
+
+.login-link:last-child {
+    margin-right: 0; /* Remove space after the last hyperlink */
+}
+
+
+
+.category-links a:last-child {
+    margin-right: 0;
+    /* Remove space after the last hyperlink */
+}
+
+@media only screen and (min-width: 769px) {
+    .menu-button {
+        display: none;
+        /* Hide the menu button on larger screens */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .category-links {
+      display: none;
+    }
+  }
+  
