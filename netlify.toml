@@ -1,6 +1,0 @@
-[build]
-  command = "ng build"
-  publish = "dist"
-
-[build.bundler]
-  max_size = 1500
